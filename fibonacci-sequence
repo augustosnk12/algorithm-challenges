@@ -1,0 +1,14 @@
+let fibonacci: number[] = [1]
+
+for (let i =1; i <= 100; i++) {
+  if (i === 1) {
+    fibonacci.push(i)
+  }
+  else{
+    fibonacci.push(fibonacci[i-1] + fibonacci[i-2])
+  }
+}
+
+fibonacci.map((number, i) => {
+  console.log(number)
+})
